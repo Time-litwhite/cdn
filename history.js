@@ -11,7 +11,7 @@ if (getDate < 10){
    getDate = String(getDate);}
 var getMonthDate = "S" + getMonth  + getDate;
 
-var geturl = "/history/json/" + getMonth + ".json"
+var geturl = "https://cdn.jsdelivr.net/gh/Time-litwhite/cdn/history/" + getMonth + ".json"
     $(function(){
         $.ajax({
             //请求方式
