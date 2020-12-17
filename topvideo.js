@@ -13,6 +13,8 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
       // 插入<video>
       var html = "<video id='video' muted loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
       document.getElementsByClassName("full_page")[0].innerHTML += html;
+      // 随机数
+      var randomNum = Math.floor((Math.random() * 15)+1);
       // 获取 <video>
       var video = document.getElementById('video');
       // 插入视频(m3u8)
@@ -32,6 +34,8 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
     // 插入<video>
     var html = "<video id='video' muted loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
     document.getElementsByClassName("full_page")[0].innerHTML += html;
+    // 随机数
+    var randomNum = Math.floor((Math.random() * 6)+1);
     // 获取 <video>
     var video = document.getElementById('video');
     // 插入视频(m3u8)
