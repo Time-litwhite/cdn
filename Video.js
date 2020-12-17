@@ -13,12 +13,10 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
       // 插入<video>
       var html = "<video id='video' muted loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
       document.getElementsByClassName("full_page")[0].innerHTML += html;
-      // 随机数
-      var randomNum = Math.floor((Math.random() * 15)+1);
       // 获取 <video>
       var video = document.getElementById('video');
       // 插入视频(m3u8)
-      var videoSrc = 'https://cdn.jsdelivr.net/gh/lete114/CDN2/video/'+randomNum+'.m3u8';
+      var videoSrc = 'https://cdn.jsdelivr.net/gh/Time-litwhite/Time-litwhite.github.io/img/video/video.m3u8';
       if (Hls.isSupported()) {
         var hls = new Hls();
         hls.loadSource(videoSrc);
@@ -34,12 +32,10 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
     // 插入<video>
     var html = "<video id='video' muted loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
     document.getElementsByClassName("full_page")[0].innerHTML += html;
-    // 随机数
-    var randomNum = Math.floor((Math.random() * 6)+1);
     // 获取 <video>
     var video = document.getElementById('video');
     // 插入视频(m3u8)
-    var videoSrc = 'https://cdn.jsdelivr.net/gh/lete114/CDN2/video/mobile/'+randomNum+'.m3u8';
+    var videoSrc = 'https://cdn.jsdelivr.net/gh/Time-litwhite/Time-litwhite.github.io/img/video/video.m3u8';
     if (Hls.isSupported()) {
       var hls = new Hls();
       hls.loadSource(videoSrc);
@@ -49,4 +45,23 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
       });
     }
   }
+}
+if($("#page-header").hasClass("full_page")){
+  var sub = new Array("人生只有一次，大胆的生活！！", "Life only once, live boldly!!");
+
+  var randomSub = Math.floor((Math.random() * sub.length));
+
+  var subtitle = document.getElementById('subtitle')
+  var i = 0; 
+  function typing() {
+    var timer = 0; var str = sub[randomSub];
+    if (i <= str.length) {
+        subtitle.innerHTML = str.slice(0, i++)
+        timer = setTimeout(typing, 200)
+    }else{
+      subtitle.innerHTML = str
+      clearTimeout(timer)
+    }
+  }
+  typing()
 }
