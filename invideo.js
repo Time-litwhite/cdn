@@ -11,14 +11,14 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
     // 判断 header里是否存在full_page
     //if($("#page-header").hasClass("full_page")){
       // 插入<video>
-      var html = "<video id='video' muted loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
+      var html = "<video id='video' loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
       document.getElementsByClassName("full_page")[0].innerHTML += html;
       // 随机数
      // var randomNum = Math.floor((Math.random() * 15)+1);
       // 获取 <video>
       var video = document.getElementById('video');
       // 插入视频(m3u8)
-      var videoSrc = 'https://cdn.jsdelivr.net/gh/Time-litwhite/Time-litwhite.github.io/img/video/video.m3u8';
+      var videoSrc = 'https://cdn.jsdelivr.net/gh/Time-litwhite/Time-litwhite.github.io/img/video/1.m3u8';
       if (Hls.isSupported()) {
         var hls = new Hls();
         hls.loadSource(videoSrc);
@@ -39,7 +39,7 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
     // 获取 <video>
     var video = document.getElementById('video');
     // 插入视频(m3u8)
-    var videoSrc = 'https://cdn.jsdelivr.net/gh/Time-litwhite/Time-litwhite.github.io/img/video/video.m3u8';
+    var videoSrc = 'https://cdn.jsdelivr.net/gh/Time-litwhite/Time-litwhite.github.io/img/video/1.m3u8';
     if (Hls.isSupported()) {
       var hls = new Hls();
       hls.loadSource(videoSrc);
