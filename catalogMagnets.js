@@ -9,11 +9,11 @@ const catalogMagnet = new Vue({
 			"http://pic1.win4000.com/wallpaper/2018-10-20/5bcae76023929.jpg",
 			"https://images2.alphacoders.com/998/thumb-1920-998287.jpg",
 			"https://images3.alphacoders.com/111/thumb-1920-1111062.png",
-			"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607871324935&di=eb1d21d95c75ebdd94c8f9df02187306&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202002%2F15%2F20200215163751_fxdqn.thumb.400_0.jpg",
+			"https://img2.huashi6.com/images/resource/2020/11/30/8600h7884p0.png?imageView2/3/q/100/interlace/1/w/1600/h/1600/format/webp",
 			"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3206960973,3220443373&fm=26&gp=0.jpg",
 			"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=614092072,2786645878&fm=26&gp=0.jpg",
-			"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607871324929&di=5fb81170a36cd65b1ef3b420c466906e&imgtype=0&src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F10390029617%2F0.jpg",
-			"https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3405443497,290088942&fm=175&app=25&f=JPG?w=640&h=705&s=15F065374D1352D85C6C29EE0300A022",
+			"https://img2.huashi6.com/images/resource/2017/07/15/638h71867p0.png?imageView2/3/q/100/interlace/1/w/1600/h/1600/format/webp",
+			"https://img2.huashi6.com/images/resource/2019/04/07/74079h941p0.jpg?imageView2/3/q/100/interlace/1/w/1600/h/1600/format/webp",
 		],
 		//这里是磁贴描述信息
 		describe:[
