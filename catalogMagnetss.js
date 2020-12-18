@@ -6,9 +6,9 @@ const catalogMagnet = new Vue({
 		postnum:[],
 		//这里是磁贴背景图片
 		img:[
-			"http://pic1.win4000.com/wallpaper/2018-10-20/5bcae76023929.jpg",
-			"https://images2.alphacoders.com/998/thumb-1920-998287.jpg",
-			"https://images3.alphacoders.com/111/thumb-1920-1111062.png",
+			"https://img2.huashi6.com/images/resource/2019/04/22/h74318296p0.jpg?imageView2/3/q/100/interlace/1/w/1600/h/1600/format/webp",
+			"https://img2.huashi6.com/images/resource/2019/02/22/73h318210p0.jpg?imageView2/3/q/100/interlace/1/w/1600/h/1600/format/webp",
+			"https://img2.huashi6.com/images/resource/2019/02/12/7314h5908p0.png?imageView2/3/q/100/interlace/1/w/1600/h/1600/format/webp",
 			"https://img2.huashi6.com/images/resource/2020/11/30/8600h7884p0.png?imageView2/3/q/100/interlace/1/w/1600/h/1600/format/webp",
 			"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3206960973,3220443373&fm=26&gp=0.jpg",
 			"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=614092072,2786645878&fm=26&gp=0.jpg",
