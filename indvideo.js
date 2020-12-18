@@ -9,12 +9,12 @@ var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
 var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
     // 判断 header里是否存在full_page
-    //if($("#page-header").hasClass("full_page")){
+    if($("#page-header").hasClass("full_page")){
       // 插入<video>
       var html = "<video id='video' loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
       document.getElementsByClassName("full_page")[0].innerHTML += html;
       // 随机数
-     // var randomNum = Math.floor((Math.random() * 15)+1);
+      var randomNum = Math.floor((Math.random() * 15)+1);
       // 获取 <video>
       var video = document.getElementById('video');
       // 插入视频(m3u8)
@@ -30,12 +30,12 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
     }
 }else{
   // 判断 header里是否存在full_page
-  //if($("#page-header").hasClass("full_page")){
+  if($("#page-header").hasClass("full_page")){
     // 插入<video>
     var html = "<video id='video' loop autoplay style='height: 100%;width: 100%;object-fit: cover;'></video>";
     document.getElementsByClassName("full_page")[0].innerHTML += html;
     // 随机数
-    //var randomNum = Math.floor((Math.random() * 6)+1);
+    var randomNum = Math.floor((Math.random() * 6)+1);
     // 获取 <video>
     var video = document.getElementById('video');
     // 插入视频(m3u8)
@@ -49,4 +49,23 @@ if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsC
       });
     }
   }
+}
+if($("#page-header").hasClass("full_page")){
+  var sub = new Array("人生只有一次，大胆的生活！！", "Life only once, live boldly!!");
+
+  var randomSub = Math.floor((Math.random() * sub.length));
+
+  var subtitle = document.getElementById('subtitle')
+  var i = 0; 
+  function typing() {
+    var timer = 0; var str = sub[randomSub];
+    if (i <= str.length) {
+        subtitle.innerHTML = str.slice(0, i++)
+        timer = setTimeout(typing, 200)
+    }else{
+      subtitle.innerHTML = str
+      clearTimeout(timer)
+    }
+  }
+  typing()
 }
