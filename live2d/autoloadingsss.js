@@ -35,7 +35,7 @@ function loadExternalResource(url, type) {
 		initWidget({
 			waifuPath: tips_path + "waifu-tips.min.json",
 			apiPath: "/Time-litwhite.github.io/live2d_api/",
-		        cdnPath: "https://live2d-1304492190.cos.ap-nanjing.myqcloud.com/live_api/"
+		        cdnPath: "https://live2d-1304492190.cos.ap-nanjing.myqcloud.com/live2d_api/"
 		});
 	});
 console.log(`
